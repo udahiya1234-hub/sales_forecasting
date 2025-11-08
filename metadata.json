@@ -1,0 +1,5 @@
+{
+  "name": "Sales Forecasting Model Dashboard",
+  "description": "A dashboard presenting the performance and key insights from scaled linear regression and scaled Lasso models for sales forecasting, evaluated across hourly, daily, weekly, and monthly granularities.",
+  "requestFramePermissions": []
+}
