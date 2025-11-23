@@ -31,3 +31,10 @@ export interface Insight {
   title: string;
   description: string;
 }
+
+export interface TourStep {
+  targetId: string;
+  title: string;
+  text: string;
+  audioUrl?: string; // Optional: for actual .mp3 files later
+}

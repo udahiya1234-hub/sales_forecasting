@@ -1,5 +1,5 @@
 
-import { GranularityResult, Insight, ChartDataPoint } from './types';
+import { GranularityResult, Insight, ChartDataPoint, TourStep } from './types';
 
 export const METRIC_DATA: GranularityResult[] = [
   {
@@ -88,3 +88,36 @@ export const CHART_DATA: ChartDataPoint[] = METRIC_DATA.map(g => {
 });
 
 export const COLAB_NOTEBOOK_LINK = "https://colab.research.google.com/drive/1iBlRoOwkuvO9gzAMWc7OFz4ZBPfetovF?usp=sharing";
+
+export const TOUR_SCRIPT: TourStep[] = [
+  {
+    targetId: 'header-section',
+    title: 'Welcome',
+    text: 'Welcome to the Sales Forecasting Model Dashboard. This interactive report provides a comparative analysis of Scaled Linear Regression and Lasso models across different time granularities.'
+  },
+  {
+    targetId: 'summary-section',
+    title: 'Performance Overview',
+    text: 'Here is the executive summary. Our analysis found that both models performed almost identically. The key challenge was high-frequency noise in hourly and daily data.'
+  },
+  {
+    targetId: 'granularity-section',
+    title: 'Key Finding',
+    text: 'This is our most important finding: The Weekly Granularity was the top performer. By aggregating data weekly, we achieved a stable M.A.P.E. of 12.87%, significantly outperforming other timeframes.'
+  },
+  {
+    targetId: 'chart-section',
+    title: 'Visual Comparison',
+    text: 'These charts visualize the error rates. You can toggle between MAE, RMSE, and MAPE. Notice how the green bars for Weekly data are much lower, indicating better accuracy.'
+  },
+  {
+    targetId: 'table-section',
+    title: 'Detailed Metrics',
+    text: 'If you need the exact numbers, this table breaks down every model run. Note the high error rates for Hourly and Daily models caused by zero-sales periods.'
+  },
+  {
+    targetId: 'insights-section',
+    title: 'Strategic Insights',
+    text: 'Finally, here are the strategic takeaways. Feature scaling had minimal impact, and future improvements should focus on advanced non-linear models for daily predictions.'
+  }
+];
